@@ -1,0 +1,435 @@
+/*
+====================================================
+* [Master Stylesheet]
+
+  Template Name : Privado 
+  Version    :  1.0 
+  Author     :  Codetic
+  Author URI :  http://themeforest.net/user/Codetic
+====================================================
+
+   TOC:
+  =======
+  0. Webfonts and Icon fonts Import
+
+  1. Primary Styles
+      a. Color Schemes for Homepage
+      b. Fun Facts Styles
+      c. Footer Styles
+
+  2. Preloader Styles
+
+  3. Main Components
+
+  4. Profile Section
+      a. Services Styles
+
+  5. Resume Section
+      a. Skills Styles
+      b. Recognition Styles
+
+  6. Portfolio Section
+      a. Testimonials Styles
+
+  7. Contact Section
+      a. Social and Map Styles
+
+===================================================== */
+/* --------------------------------- */
+/* 0. Webfonts and Icon fonts
+ ----------------------------------- */
+/* -------------------------------- 
+1. Primary style
+-------------------------------- */
+
+
+.btn:after {
+	left:-3em;
+	right: auto;
+}
+
+.btn:hover:after {
+	left:2em;
+	right: auto;
+}
+
+/* ------------------------------------------------
+*/
+/* Olive Scheme  
+----------------------------------*/
+
+/* Colorful Scheme
+----------------------------------*/
+/*.single-page:nth-child(1) */
+
+/* Dark Scheme 
+----------------------------------*/
+/*.single-page:nth-child(1) */
+
+/* -------------------------------- 
+    1.b. Fun Facts Styles
+-------------------------------- */
+
+.fun-facts ul li {
+	border-left: 2px solid #fff;
+	float: right;
+	border-right: none;
+}
+
+.fun-facts ul li:last-child {
+	border-left:2px transparent;
+	border-right: none;
+}
+
+/* -------------------------------- 
+    1.c. Footer Styles
+-------------------------------- */
+
+.footer a {
+	padding-left:40px;
+	padding-right: 0;
+}
+
+.footer a:after {
+	left:0;
+	right: auto;
+}
+
+.footer span {
+	margin-right:40px;
+	margin-left: auto;
+}
+
+/* ------------------------------------------- */
+/* 2. Preloader CSS */ 
+/* ------------------------------------------- */
+
+#preloader {
+	right:0;
+	left: auto;
+}
+
+.loader {
+	right: calc(50% - 25px);
+	left: auto;
+}
+
+/* -------------------------------- 
+*/
+.owl-carousel .owl-wrapper-outer {
+    direction: ltr !important;
+}
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item {
+    direction: rtl !important;
+}
+.mfp-content {
+    text-align: right !important;
+	direction: rtl !important;
+}
+.page-container .single-page {
+	right:0;
+	left: auto;
+}
+.mfp-close {
+    left:0 !important;
+	right: auto;
+}
+.page-container .single-page::after {
+	right:0;
+	left: auto;
+}
+.owl-rtl{
+    direction: rtl;
+}
+.owl-rtl .owl-item {
+    float:right;
+}
+.page-title {
+	right: 0;
+	left: auto;
+}
+
+.page-container .page-close {
+	left:5%;
+	right: auto;
+}
+
+.page-container .page-scroll {
+	right:50%;
+	left: auto;
+}
+
+/* Screens Resolution : 768px+
+--------------------------------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+
+.loader {
+	right: calc(50% - 25px);
+	left: auto;
+}
+
+/* -------------------------------- 
+*/
+.portfolio-items figure {
+    direction: ltr;
+}
+.page-container .page-scroll {
+    left: 49.5% !important;
+}
+.page-container .single-page.is-full-width {
+    right: 0 !important;
+}
+.page-container .single-page:nth-of-type(4) {
+    right: 75vw;
+    top: 0;
+	left: auto;
+}
+.page-container .single-page:nth-of-type(2) {
+    right: 25vw;
+    top: 0;
+	left: auto;
+}
+.page-container .single-page:nth-of-type(3) {
+    right: 50vw;
+    top: 0;
+	left: auto;
+}
+.page-container .single-page {
+	right:0;
+	left: auto;
+	direction:rtl;
+}
+
+.page-container .single-page::after {
+	right:0;
+	left: auto;
+}
+
+.page-title {
+	right: 0;
+	left: auto;
+}
+
+.page-container .page-close {
+	left:5%;
+	right: auto;
+}
+
+.page-container .page-scroll {
+	right:50%;
+	left: auto;
+}
+.is-loaded.is-full-width .page-title {
+    right: 37.5vw;
+    transition: transform 0.6s ease 0s, opacity 0s ease 0s, right 0.4s ease 0s;
+}
+
+}
+
+/* min-width:768 end */
+/* ---------------------------------------------
+*/
+
+.about-me .profile-image h2 {
+	text-align: right;
+}
+
+.about-me .profile-image h3 {
+	text-align: right;
+}
+
+.about-me .profile-image h3:before {
+	right: 0;
+	left: auto;
+}
+
+.about-me .bio-inner {
+	right: 0;
+	left: auto;
+}
+
+/* ----------------------------------------------------
+*/
+
+/* ----------------------------------------------------
+*/
+
+.resume .education {
+	text-align:left;
+	padding-left:50px;
+	padding-right: 0;
+}
+
+.resume .employment {
+	text-align:right;
+	padding-right:50px;
+	padding-left: 0;
+}
+
+.education ul li p {
+	padding-right:150px;
+	padding-left: 0;
+}
+
+.employment ul li p {
+	padding-left:150px;
+	padding-right: 0;
+}
+
+/* ------------------------------------------------
+*/
+
+/* --------------------------------------------
+*/
+
+.recognition .rec-inner {
+	right:0;
+	left: auto;
+}
+
+/* ----------------------------------------------------
+*/
+
+button.filter + label {
+	margin-right:1em;
+	margin-left: auto;
+}
+
+/* Common figure style */
+
+.portfolio-items figure figcaption,
+ .portfolio-items figure figcaption > a {
+	right: 0;
+	left: auto;
+}
+
+/* Anchor will cover the whole item by default */
+
+/* Individual effects */
+/*---------------*/
+/***** Roxy *****/
+/*---------------*/
+
+.portfolio-items figure.effect-roxy figcaption::before {
+	left: 30px;
+	right: 30px;
+}
+
+.portfolio-items figure.effect-roxy figcaption {
+	text-align: right;
+}
+
+.portfolio-items figure.effect-roxy h2 {
+	padding: 20% 5px 10px 0 !important;
+}
+
+.portfolio-items figure.effect-roxy p {
+	padding-right: 5px;
+	padding-left: 0;
+}
+
+/* ----------------------------------------------------
+*/
+
+.over-div {
+	left:0;
+	right: auto;
+}
+
+/*  Blockquotes */
+
+.testimonials blockquote p:before {
+	margin-right: -20px;
+	margin-left: auto;
+}
+
+.testimonials blockquote p:after {
+	margin-right: 1px;
+	margin-left: auto;
+}
+
+.clients ul li {
+	float:right;
+}
+
+/* ----------------------------------------------------
+*/
+
+.form-container input {
+	float:right;
+}
+
+.form-container input[type="email"] {
+	float:left;
+}
+
+#message-warning i,#message-success i {
+	margin-left:10px;
+	margin-right: auto;
+}
+
+/* -------------------------------- 
+*/
+
+.address:after {
+	border-left:403px solid transparent;
+	left:-403px;
+	right: auto;
+	border-right: none;
+}
+
+.location ul li {
+	border-left:1px solid #f3f3f3;
+	float:right;
+	border-right: none;
+}
+
+/* Social Profiles */
+
+.social-profiles ul li {
+	float:right;
+	margin-left:15px;
+	margin-right: auto;
+}
+.form-container input {
+    text-align: right;
+}
+.form-container textarea {
+    direction: rtl;
+}
+@media only screen and (max-width: 479px) {
+.education ul li p {
+    padding-left: 5px;
+}
+.employment ul li p {
+    padding-left: 5px;
+}
+.education ul li p {
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer a {
+    font-size: 11px;
+    padding-left: 10px;
+}
+.page-container .page-scroll {
+    left: auto;
+    right: 38%;
+}
+.recognition .rec-inner {
+    direction: rtl;
+}
+.about-me .bio-inner {
+    direction: rtl;
+}
+.about-me .bio h3 {
+	text-align:right !important
+}
+}
+.about-me .bio-inner {
+    direction: rtl;
+}
+.about-me .bio h3 {
+	text-align:right !important
+}
